@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Evanston Tavern 1846';
+    src: local('Evanston Tavern 1846 Light'), local('Evanston-Tavern-1846-Light'),
+        url('EvanstonTavern-1846Light.woff2') format('woff2'),
+        url('EvanstonTavern-1846Light.woff') format('woff'),
+        url('EvanstonTavern-1846Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }

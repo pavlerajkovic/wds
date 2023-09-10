@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="ChillPavz">
+    <meta name="description" content="Pav's Esports Profile">
+    <meta name="keywords" content="apex, esports, egamer, gaming, gamer, battle royale, fps">
+    <meta name="author" content="Pavle Rajkovic">
+    <meta name="publisher" content="PavCorp">
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-gallery.css">
+  </head>
+
+
+    <body>
+
+        <!-- header section starts -->
+        <header class="header">
+            <span class="logo">ChillPavz</span>
+            <div class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./gallery.html" class="current">Gallery</a></li>
+                    <li><a href="./app.html">Apps</a>
+                        <ul>
+                            <li><a href="#" class="app">Apex</a></li>
+                            <li><a href="#" class="app">Kovaak</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- header section ends -->
+
+        <!-- Images used to open the lightbox -->
+        <main class="main">
+        <div class="row">
+          <div class="column">
+            <img src="../images/gallery/ash.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="../images/gallery/bangalore.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="../images/gallery/bloodhound.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="../images/gallery/caustic.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="../images/gallery/gibraltar.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="../images/gallery/valkyrie.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="../images/gallery/mirage.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="../images/gallery/octane.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
+          </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 8</div>
+              <img src="../images/gallery/ash.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 8</div>
+              <img src="../images/gallery/bangalore.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img src="../images/gallery/bloodhound.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img src="../images/gallery/caustic.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+              <img src="../images/gallery/gibraltar.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img src="../images/gallery/valkyrie.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">7 / 8</div>
+              <img src="../images/gallery/mirage.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">8 / 8</div>
+              <img src="../images/gallery/octane.png" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+              <img class="demo" src="../images/gallery/ash.png" onclick="currentSlide(1)" alt="Ash" style="width:75%">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="../images/gallery/bangalore.png" onclick="currentSlide(2)" alt="Bangalore" style="width:75%">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="../images/gallery/bloodhound.png" onclick="currentSlide(3)" alt="Bloodhound" style="width:75%">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="../images/gallery/caustic.png" onclick="currentSlide(4)" alt="Caustic" style="width:75%">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="../images/gallery/gibraltar.png" onclick="currentSlide(5)" alt="Gibraltar" style="width:75%">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="../images/gallery/valkyrie.png" onclick="currentSlide(6)" alt="Valkyrie" style="width:75%">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="../images/gallery/mirage.png" onclick="currentSlide(7)" alt="Mirage" style="width:75%">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="../images/gallery/octane.png" onclick="currentSlide(8)" alt="Octane" style="width:75%">
+            </div>
+
+          </div>
+        </div>
+      </main>
+
+        <!-- footer section starts -->
+        <footer class="footer">
+            <div class="container">
+                <form method="post">
+                    <div class = "email">
+                        <i class="fas fa-envelope" style="color:white;"></i>
+                        <input type="email" placeholder="Sign up for Apex Legends News"></input>
+                        <button type="submit" disabled>Subscribe</button>
+                    </div>
+                </form>
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.twitch.tv/chillpavz" target="_blank" id="twitch"><i class="fab fa-twitch"></i></a></li>
+                        <li><a href="https://www.instagram.com/pavle_rajkovic/" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://github.com/pavlerajkovic" target="_blank" id="github"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" target="_blank" id="discord"><i class="fab fa-discord"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "copyright">
+                <p>Copyright &copy; 2022 Pavle Rajković, All Rights Reserved</p>
+            </div>
+        </footer>
+        <!-- footer section ends -->
+
+        <!-- custom js file link -->
+        <script src="../js/lightbox.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("fonts/evanston/stylesheet.css");
+
+$cosmic-cobalt: #302E80ff;
+$iceberg: #75A1CDff;
+$royal-blue-dark: #072B6Bff;
+$russian-violet: #0A0835ff;
+$oxford-blue: #011D4Cff;
+$eminence: #6F3382ff;
+$white: #fff;
+$mirage: #151520;
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+
+body {
+    background: $mirage;
+    color: $white;
+}
+
+.header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 1%;
+    position: relative;
+    background-color: $mirage; 
+    top: 0;
+
+    .logo {
+        font-family: 'Bebas Neue', cursive; 
+        font-size: 5rem; 
+        color: white; 
+    }
+
+    .navbar {
+        width: fit-content;
+        height: fit-content;
+
+        ul {
+            list-style: none; 
+
+            li {
+                position: relative;
+                float: left;
+
+                &:hover ul {
+                    display: block; /* drop-down menu */
+                }
+
+                .current {
+                    background-color: $cosmic-cobalt; 
+                }
+
+                a {
+                    font-family: 'Barlow', sans-serif; 
+                    font-weight: 600; 
+                    text-transform: uppercase; 
+                    padding: 2rem; 
+                    display: block;
+                    font-size: 2rem; 
+                    color: white; 
+
+                    &:hover:not(.app) {
+                        text-decoration: underline; 
+                        text-decoration-color: $cosmic-cobalt; 
+                        text-decoration-thickness: 20%; 
+                        text-underline-offset: 15%; 
+                    }
+                }
+
+                ul {
+                    position: absolute; 
+                    width: 20rem; 
+                    display: none;
+
+                    li {
+                        width: 100%; 
+
+                        &:hover .app {
+                            background-color: $eminence; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    background-color: $mirage;  
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1%; 
+
+        .email {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+
+            &:hover > input,button:focus {
+                width: 260px;
+                padding: 0 10px;
+            }
+
+            i {
+                background-color: $iceberg;
+                width: 50px;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 10% 0 0 10%;
+            }
+
+            input, button {
+                border: none;
+                outline: none;
+            }
+
+            input {
+                width: 0px;
+                background-color: white;
+                transition: 0.6s;
+            }
+
+            button {
+                background-color: $iceberg;
+                color: white;
+                text-transform: uppercase;
+                padding: 0 10px;
+                cursor: pointer;
+                border-radius: 0 10% 10% 0;
+            }
+        }
+    }
+
+    .social {
+
+        ul {
+            list-style: none;
+
+            li {
+                position: relative;
+                float: left;
+
+                a {
+                    position: relative;
+                    display: block;
+                    font-size: 2.5rem;
+                    color: black;
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 40%;
+                    background-color: white;
+                    transition: .3s;
+                    text-align: center;
+                    margin-right: 0.5rem;
+
+        
+                    &:hover {
+                        transform: translate(0, -10px);
+                        background-color: $iceberg;
+                        color:white;
+                    }
+        
+                    i {
+                        background-color: transparent;
+                        vertical-align: middle;
+                    }
+                }
+
+                #twitch:hover {
+                    background-color: rgb(145 70 255);
+                }
+
+                #instagram:hover {
+                    background-color: rgb(193, 53, 132);
+                }
+
+                #github:hover {
+                    background-color: rgb(27 31 34);
+                }
+
+                #discord:hover {
+                    background-color: rgb(88 101 242);
+                }
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}

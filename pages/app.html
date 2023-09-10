@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf8">
+
+        <!-- responsive web design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="title" content="ChillPavz">
+        <meta name="description" content="Pav's Esports Profile">
+        <meta name="keywords" content="apex, esports, egamer, gaming, gamer, battle royale, fps">
+        <meta name="author" content="Pavle Rajkovic">
+        <meta name="copyright" content="PavCorp">
+
+        <title>Home</title>
+        <link rel="icon" type="image/png" href="../images/favicon.png">
+
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        
+        <!-- custom css file link -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-app.css">
+
+        <!-- custom js file link -->
+        <script src="../js/script.js" async></script>
+    </head>
+
+    <body>
+
+        <!-- header section starts -->
+
+        <header class="header">
+            <span class="logo">ChillPavz</span>
+            <div class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./app.html" class="current">Apps</a>
+                        <ul>
+                            <li><a href="#" class="app">Apex</a></li>
+                            <li><a href="#" class="app">Kovaak</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- header section ends -->
+
+        <main class="main">
+            <div class="forms">
+                <form class="players">
+                    <input type="text" name="player-one" id="player-one" value="" placeholder="Teammate 1">
+                    <input type="text" name="player-two" id="player-two" value="" placeholder="Teammate 2">
+                    <input type="text" name="player-three" id="player-three" value="" placeholder="Teammate 3">
+                    <input type="button" name="button" id="button" value="Challenge" onclick="generateChallenge()">
+                </form>
+            </div>
+
+            <table class="challenge">
+                <thead>
+                    <tr>
+                        <th>Teammate</th>
+                        <th>Legend</th>
+                        <th>Primary Gun</th>
+                        <th>Secondary Gun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="teammate-one"></td>
+                        <td id="legend-one"></td>
+                        <td id="primary-one"></td>
+                        <td id="secondary-one"></td>
+                    </tr>
+                    <tr>
+                        <td id="teammate-two"></td>
+                        <td id="legend-two"></td>
+                        <td id="primary-two"></td>
+                        <td id="secondary-two"></td>
+                    </tr>
+                    <tr>
+                        <td id="teammate-three"></td>
+                        <td id="legend-three"></td>
+                        <td id="primary-three"></td>
+                        <td id="secondary-three"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </main>
+
+        <!-- footer section starts -->
+
+        <footer class="footer">
+            <div class="container">
+                <form method="post">
+                    <div class = "email">
+                        <i class="fas fa-envelope" style="color:white;"></i>
+                        <input type="email" placeholder="Sign up for Apex Legends News"></input>
+                        <button type="submit" disabled>Subscribe</button>
+                    </div>
+                </form>
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.twitch.tv/chillpavz" target="_blank" id="twitch"><i class="fab fa-twitch"></i></a></li>
+                        <li><a href="https://www.instagram.com/pavle_rajkovic/" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://github.com/pavlerajkovic" target="_blank" id="github"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" target="_blank" id="discord"><i class="fab fa-discord"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "copyright">
+                <p>Copyright &copy; 2022 Pavle Rajković, All Rights Reserved</p>
+            </div>
+        </footer>
+
+        <!-- footer section ends -->
+
+    </body>
+
+</html>
